@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Operator Example</title>
+    <style>
+        body {
+            background-color: blue;
+            color: red;
+        }
+        
+        div {
+            text-align: center;
+        }
+        
+        p {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="cybersquare" align="center">
+            Change the function with different operators</h1>
+        <input type="text" id="cyber_input1" />
+        <input type="text" id="cyber_input2" />
+        <p id="total"></p>
+        <button onclick="operators( )">Click Button</button>
+    </div>
+    <script>
+        function operators() {
+            // Capture the entered values of two input boxes
+            var firstvalue =
+                document.getElementById('cyber_input1').value;
+            var secondvalue =
+                document.getElementById('cyber_input2').value;
+            var sum = parseInt(firstvalue) + parseInt(secondvalue);
+            if (parseInt(sum) == 10) {
+                document.getElementById('total').innerHTML =
+                    "Total value is equal to 10";
+            } else {
+                document.getElementById('total').innerHTML =
+                    "Total value is " + sum;
+            }
+        }
+    </script>
+</body>

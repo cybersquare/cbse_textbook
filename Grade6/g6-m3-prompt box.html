@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <p>Click the button to demonstrate the prompt box.</p>
+    <button onclick="myFunction( )">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            //  To read your name using prompt box 
+            var value = prompt("What is your name");
+            document.getElementById("demo").innerHTML = "Hello " +
+                value + "! How are you today?";
+        }
+    </script>
+</body>
+
+</html>

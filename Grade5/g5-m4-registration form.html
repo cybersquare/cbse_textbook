@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Registration form</title>
+</head>
+
+<body>
+    <form name="frm_reg" method="POST" action="registration.php">
+        <table>
+            <tr>
+                <td>Customer name</td>
+                <td><input type="text" name="txt_name"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="txt_password"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea rows="5" cols="25" name="txt_address">
+                   </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Telephone no.</td>
+                <td><input type="text" name="txt_telephone"></td>
+            </tr>
+            <tr>
+                <td>Continent</td>
+                <td>
+                    <select name="dd_country">
+                     <option value="AS">Asia</option>
+                     <option value="AF">Africa</option>
+                     <option value="NA">North America</option>
+                     <option value="SA">South America</option>
+                     <option value="EU">Europe</option>
+                     <option value="AU">Australia</option>
+                 </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

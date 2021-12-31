@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Laughing Smiley Example</title>
+    <style>
+        body {
+            background-color: #9c47a2;
+            color: red;
+        }
+        
+        div {
+            margin-left: 621px;
+        }
+        
+        button {
+            background-color: yellow;
+        }
+    </style>
+    <script type="text/javascript">
+        function smilePlz() {
+            document.getElementById('myImage').src = 'images/smile.png';
+        }
+
+        function laugh() {
+            document.getElementById('myImage').src = 'images/laugh.jpg';
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align="center">What Can JavaScript Do? Let's see</h1>
+    <div>
+        <button onclick="smilePlz( );">Smile Please..</button>
+        <img id="myImage" src="images/laugh.jpg" style="width:100px">
+        <button onclick="laugh( );">Laugh !!</button>
+    </div>
+</body>
+
+</html>

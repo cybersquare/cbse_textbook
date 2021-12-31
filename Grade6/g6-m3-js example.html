@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p2">Hello World!</p>
+    <button onclick="display()">Click me for a change!</button>
+    <br><br> The style of the paragraph above was changed by a script.
+    <script>
+        function display() {
+            document.getElementById("p2").style.color = "blue";
+            document.getElementById("p2").style.fontFamily = "Arial";
+            document.getElementById("p2").style.fontSize = "larger";
+        }
+    </script>
+</body>
+
+</html>

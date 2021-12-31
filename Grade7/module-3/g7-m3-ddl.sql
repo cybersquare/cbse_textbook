@@ -48,7 +48,7 @@ ALTER TABLE table_name
 MODIFY column_name column_type;
 
 -- Sample Table
-Students
+Student
 
 ROLL_NO	NAME
 1	    Ram

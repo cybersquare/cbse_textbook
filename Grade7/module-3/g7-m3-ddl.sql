@@ -85,6 +85,37 @@ ROLL_NO	NAME	AGE
 3	    Rahul	
 4	    Tanu
 
+-- A DROP statement in SQL removes a component from a relational database management system (RDBMS).
+-- Syntax:
+
+DROP TABLE table_name;
+-- table_name: Name of the table to be deleted.
+
+-- Example:
+DROP TABLE Student;
+
+-- to drop a database,follow the below syntax:
+DROP DATABASE database_name;
+-- database_name: Name of the database to be deleted.
+
+-- The TRUNCATE TABLE mytable statement is logically (though not physically) equivalent to the DELETE FROM mytable statement (without a WHERE clause).
+-- Syntax:
+
+TRUNCATE TABLE  table_name;
+-- table_name: Name of the table to be truncated.
+
+-- Example
+TRUNCATE TABLE Student;
+
+-- Queries
+
+-- To delete the whole database
+DROP DATABASE my_database; 
+
+-- After running the above query whole database will be deleted.
+
+-- To truncate Student table from my_database database.
+TRUNCATE TABLE Student;
 
 
 

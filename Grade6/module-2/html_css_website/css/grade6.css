@@ -1,0 +1,42 @@
+li {
+    display: block;
+    float: left;
+    padding-right: 20px;
+}
+
+.navitem {
+    color: white;
+    font-size: 20px;
+}
+
+.image-contend {
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+}
+
+.contend {
+    background-color: yellow;
+    width: 500px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 30px;
+}
+
+.button {
+    color: yellowgreen;
+    background-color: rgb(0, 99, 74);
+    height: 50px;
+    width: max-content;
+    font-size: 30px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.navbar {
+    background-color: rgb(25, 26, 83);
+    grid-auto-flow: column;
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px;
+}

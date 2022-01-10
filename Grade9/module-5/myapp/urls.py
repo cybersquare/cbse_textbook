@@ -7,5 +7,7 @@ urlpatterns = [
    path('home/', views.home),
    path('login/',views.userLogin),
    path('register/',views.userRegistration),
+   path('search/',views.searchName,name='searchName'),
+
 
 ]

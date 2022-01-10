@@ -1,6 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.db import connection
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+ 
+
 
 # Create your views here.
 def index(request):
@@ -50,4 +54,17 @@ def userRegistration(request):
        connection.commit()
        context={'successMessage':"User registered successfully"}
        return render(request, 'facebook.html', context)
+
+
+
+@api_view(['POST'])
+def searchName(request):
+   userdata=request.data
+   if userdata and ('search_string' in userdata):
+       cursor = connection.cursor()
+       cursor.execute("SELECT first_name FROM tbl_user where \
+           first_name like '" + userdata['search_string']+"%'")
+       rows = cursor.fetchall()
+       return Response({'results': list(rows)})
+   return Response("Invalid search string")
 

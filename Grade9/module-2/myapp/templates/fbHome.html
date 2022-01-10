@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+
+<body>
+    <div id="top">
+        <h1>facebook</h1>
+        <input type="text" name="search" id="search_box" placeholder="search Here">
+        <input type="button" value="Logout" id="logout">
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item side">
+
+            <p>View profile</p>
+            <p>Change password</p>
+            <p>Friends</p>
+        </div>
+        <div class="grid-item">
+            <div id="loginMessage" align="center">
+                <h3>{{message}}</h3>
+                You are logged in as: <b>{{user}}</b>
+            </div>
+        </div>
+        <div class="grid-item side">Advertisements</div>
+    </div>
+</body>
+
+</html>

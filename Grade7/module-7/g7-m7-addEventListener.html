@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cybersquare</title>
+    <style type="text/css">
+        h1 {
+            color: yellow;
+        }
+        
+        body {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center"> cybersquare.com </h1>
+    <p align="center">Click anywhere in the document to change its background color.</p>
+    <div id="res" align="right"></div>
+
+    <script>
+        document.addEventListener("click", function() {
+            document.body.style.backgroundColor = "Black";
+            createImage();
+        });
+
+        function createImage() {
+            var x = document.createElement("IMG");
+            x.setAttribute("src", "https://sites.google.com/site/" +
+                "pranihodhman/_/rsrc/1387105541678/home/" +
+                "images-stories-K-welcome-235x304.png");
+            document.getElementById("res").appendChild(x);
+        }
+    </script>
+</body>
+
+</html>
